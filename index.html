@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aarav's Portfolio | 7th Standard Tinkerer & Robotics Lab (Hyderabad)</title>
+  <meta name="description" content="Personal website & robotics portfolio of Aarav Reddy, Class 7-B student from Hyderabad. Arduino projects, Science expo creations, and web experiments!">
+  
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- Favicon / Emoji Icon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🤖</text></svg>">
+</head>
+<body>
+
+  <!-- Ambient Glow Effects -->
+  <div class="ambient-glow"></div>
+  <div class="ambient-glow-2"></div>
+
+  <!-- Header Navigation -->
+  <header class="header" id="navbar">
+    <div class="container nav-container">
+      <a href="#hero" class="logo" id="brand-logo">
+        <div class="logo-icon">⚡</div>
+        <span>Aarav's <span class="highlight">Portfolio</span></span>
+      </a>
+
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="#about" class="nav-link">About Me</a></li>
+        <li><a href="#projects" class="nav-link">My Projects</a></li>
+        <li><a href="#simulator" class="nav-link">Arduino Sim 🎛️</a></li>
+        <li><a href="#achievements" class="nav-link">Badges 🏆</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#guestbook" class="nav-link">Guestbook</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="lab-power-toggle" id="lab-toggle-btn" aria-label="Toggle Lab Power Mode">
+          <span class="power-indicator" id="power-dot"></span>
+          <span id="power-btn-text">Lab: ONLINE ⚡</span>
+        </button>
+        <button class="mobile-toggle" id="mobile-menu-btn" aria-label="Toggle Mobile Menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="status-pill">
+            <span class="badge badge-cyan">
+              🟢 Currently: Building an Obstacle Rover for Science Expo 2025!
+            </span>
+          </div>
+
+          <h1 class="hero-title">
+            Welcome to <br><span class="highlight">Aarav's Portfolio</span> 👋
+          </h1>
+
+          <p class="hero-subtitle">
+            7th Standard Student, DIY Robotics Tinkerer & Web Explorer from Hyderabad! I turn cardboard boxes, motors, and Arduino code into working robots.
+          </p>
+
+          <div class="hero-meta">
+            <span class="badge badge-green">📍 Hyderabad, TG, India</span>
+            <span class="badge badge-purple">🏫 Class 7-B @ DPS Nacharam</span>
+            <span class="badge badge-cyan">🤖 T-Hub Junior Certified</span>
+          </div>
+
+          <div class="hero-buttons">
+            <a href="#projects" class="btn btn-primary" id="hero-btn-projects">
+              <span>Explore My Projects</span> 🚀
+            </a>
+            <a href="#simulator" class="btn btn-secondary" id="hero-btn-sim">
+              <span>Test Arduino Simulator</span> 🎛️
+            </a>
+          </div>
+        </div>
+
+        <!-- Profile Card & Real Stock Image -->
+        <div class="profile-card-wrapper">
+          <div class="profile-card">
+            <div class="profile-img-box">
+              <img src="assets/aarav_profile.png" alt="Aarav Reddy - 7th Standard Student from Hyderabad" class="profile-img" id="aarav-avatar-img">
+              <div class="profile-badge-overlay">
+                ⚡ 12 Yrs Old • Tech Enthusiast
+              </div>
+            </div>
+
+            <div class="profile-info">
+              <h3 class="profile-name">Aarav Reddy</h3>
+              <p class="profile-tag">Grade 7 Student & Code Tinkerer</p>
+              
+              <div class="profile-stats">
+                <div class="stat-item">
+                  <span class="stat-val" id="stat-projects-count">6+</span>
+                  <span class="stat-lbl">Projects</span>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-val">7-B</span>
+                  <span class="stat-lbl">Standard</span>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-val">3</span>
+                  <span class="stat-lbl">Trophies</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section class="about-section" id="about">
+      <div class="container">
+        <h2 class="section-title">
+          <span>📖</span> Life in <span class="highlight">7th Standard</span>
+        </h2>
+        <p class="section-subtitle">
+          Balancing school homework, cricket matches, and circuit wiring every single day!
+        </p>
+
+        <div class="about-grid">
+          <div class="about-card">
+            <div class="about-icon">🏫</div>
+            <h3>School & Favorite Subjects</h3>
+            <p>
+              I study in Class 7-B at Delhi Public School, Nacharam! My favorite periods are Science Lab and Computer Science. I love experimenting with logic gates and HTML, but I really dislike heavy Hindi grammar homework!
+            </p>
+          </div>
+
+          <div class="about-card">
+            <div class="about-icon">🤖</div>
+            <h3>How I got into Robotics</h3>
+            <p>
+              My uncle gave me an Arduino Uno starter kit on my 12th birthday. On day 1, I accidentally burnt a tiny red LED. But on day 2, I made a servo motor rotate 90 degrees! Ever since, my desk is full of jumper wires and hot glue.
+            </p>
+          </div>
+
+          <div class="about-card">
+            <div class="about-icon">🏏</div>
+            <h3>Cricket & Colony Life</h3>
+            <p>
+              Every Sunday evening, I play cricket in our apartment basement in Habsiguda. I am a leg-spin bowler! My highest bowling score was taking 3 wickets for 14 runs against the 8th standard team!
+            </p>
+          </div>
+
+          <div class="kid-quote-box">
+            <span class="quote-mark">“</span>
+            <div class="quote-text">
+              "My code may fail 10 times, but when the motor finally spins and the ultrasonic sensor detects an obstacle, it feels better than eating two plates of hot Hyderabadi Paradise Biryani!" — <strong>Aarav's Coding Philosophy</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Robotics & Code Projects -->
+    <section class="projects-section" id="projects">
+      <div class="container">
+        <h2 class="section-title">
+          <span>🛠️</span> My <span class="highlight">Robotics & Code</span> Lab
+        </h2>
+        <p class="section-subtitle">
+          Real hardware models & web projects built with my own hands!
+        </p>
+
+        <div class="project-filters">
+          <button class="filter-btn active" data-filter="all">All Creations (4)</button>
+          <button class="filter-btn" data-filter="robotics">🤖 Hardware & Arduino</button>
+          <button class="filter-btn" data-filter="web">💻 Web Dev</button>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project 1 -->
+          <article class="project-card" data-category="robotics">
+            <div class="project-media">
+              <img src="assets/rover_project.png" alt="Obstacle Avoidance Robo-Rover v2.0" class="project-img">
+              <span class="project-tag-overlay">🤖 Arduino Hardware</span>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Obstacle-Avoiding Robo Rover v2.0</h3>
+              <p class="project-desc">
+                A 4-wheel drive robot chassis equipped with an HC-SR04 Ultrasonic distance sensor and L298N motor driver module. Automatically scans left & right when an obstacle comes closer than 15 cm.
+              </p>
+              <div class="kid-note">
+                💡 Aarav's Note: "It almost ran over my mother's indoor plant, but the sensor stopped it just 2 cm away! Phew!"
+              </div>
+              <div class="project-tech">
+                <span class="tech-chip">Arduino Uno</span>
+                <span class="tech-chip">HC-SR04 Sensor</span>
+                <span class="tech-chip">L298N Driver</span>
+                <span class="tech-chip">C++</span>
+              </div>
+              <div class="project-actions">
+                <a href="#simulator" class="btn btn-secondary btn-sm" onclick="loadSimRoverPreset()">Test Code in Sim 🎛️</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="project-card" data-category="robotics">
+            <div class="project-media">
+              <img src="assets/smart_bin_project.png" alt="Smart IR Automatic Dustbin" class="project-img">
+              <span class="project-tag-overlay">🏆 Science Expo 2nd Prize</span>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Smart IR Automatic Dustbin</h3>
+              <p class="project-desc">
+                A touchless trash bin crafted from a cardboard box, blue chart paper, SG90 servo motor, and an Infrared Proximity Sensor. When you bring your hand near, the lid automatically opens for 5 seconds!
+              </p>
+              <div class="kid-note">
+                💡 Aarav's Note: "Won 2nd Prize in the Inter-School Science Expo 2025! The judges loved that it keeps hands germ-free!"
+              </div>
+              <div class="project-tech">
+                <span class="tech-chip">SG90 Servo</span>
+                <span class="tech-chip">IR Proximity</span>
+                <span class="tech-chip">Cardboard Craft</span>
+                <span class="tech-chip">C++</span>
+              </div>
+              <div class="project-actions">
+                <a href="#simulator" class="btn btn-secondary btn-sm" onclick="loadSimBinPreset()">Test Servo Code ⚙️</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="project-card" data-category="web">
+            <div class="project-media" style="background: linear-gradient(135deg, #1e1b4b, #311b92); display:flex; align-items:center; justify-content:center;">
+              <div style="text-align:center; font-size:3.5rem;">🌧️📚</div>
+              <span class="project-tag-overlay">💻 HTML / CSS / JS</span>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Hyderabad Weather & Homework Tracker</h3>
+              <p class="project-desc">
+                A mini web application built with vanilla JavaScript so I never forget my Maths homework notebook or rain jacket during the Hyderabad monsoon season!
+              </p>
+              <div class="kid-note">
+                💡 Aarav's Note: "My computer teacher Mr. Prasad gave me 10/10 extra points for putting an alert popup!"
+              </div>
+              <div class="project-tech">
+                <span class="tech-chip">HTML5</span>
+                <span class="tech-chip">CSS Grid</span>
+                <span class="tech-chip">Vanilla JS</span>
+              </div>
+              <div class="project-actions">
+                <button class="btn btn-secondary btn-sm" onclick="triggerHomeworkDemo()">Run Demo Alert 🔔</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 4 -->
+          <article class="project-card" data-category="web">
+            <div class="project-media" style="background: linear-gradient(135deg, #064e3b, #022c22); display:flex; align-items:center; justify-content:center;">
+              <div style="text-align:center; font-size:3.5rem;">⚡🤖</div>
+              <span class="project-tag-overlay">💻 Personal Site</span>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Aarav's Cyber RoboLab Website</h3>
+              <p class="project-desc">
+                This exact site you are browsing right now! Built from scratch using modern HTML5, CSS design system tokens, and interactive JavaScript simulations.
+              </p>
+              <div class="kid-note">
+                💡 Aarav's Note: "Zero heavy npm libraries used — pure handcrafted code!"
+              </div>
+              <div class="project-tech">
+                <span class="tech-chip">HTML5</span>
+                <span class="tech-chip">CSS Variables</span>
+                <span class="tech-chip">Interactive DOM</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive Live Arduino & Circuit Simulator Widget -->
+    <section class="simulator-section" id="simulator">
+      <div class="container">
+        <h2 class="section-title">
+          <span>🎛️</span> Interactive <span class="highlight">Arduino Circuit Simulator</span>
+        </h2>
+        <p class="section-subtitle">
+          Test Aarav's real micro-controller logic right here in your browser!
+        </p>
+
+        <div class="sim-container">
+          <div class="sim-header">
+            <div class="sim-title">
+              <span>⚡ Arduino Uno Rev3 Simulator</span>
+              <span class="badge badge-green" id="sim-status-badge">STATUS: IDLE</span>
+            </div>
+            <div>
+              <span style="font-family: var(--font-code); font-size: 0.85rem; color: var(--text-muted);">COM Port: <code>COM3 (USB 2.0)</code></span>
+            </div>
+          </div>
+
+          <div class="sim-grid">
+            <!-- Left: Visual Canvas -->
+            <div class="circuit-canvas">
+              <div class="board-uno">
+                <div style="display:flex; justify-content:space-between; align-items:center;">
+                  <span style="font-family:var(--font-code); font-size:0.7rem; font-weight:700; color:#fff;">ARDUINO UNO</span>
+                  <div class="uno-leds">
+                    <div class="sim-led" id="led-power" style="background:#00e676;" title="Power LED"></div>
+                    <div class="sim-led" id="led-pin13" title="Pin 13 Indicator"></div>
+                  </div>
+                </div>
+
+                <div class="uno-chip">ATmega328P</div>
+
+                <div style="display:flex; justify-content:space-between; font-size:0.6rem; color:#ccc; font-family:var(--font-code);">
+                  <span>DIGITAL (PWM~)</span>
+                  <span>POWER / ANALOG</span>
+                </div>
+              </div>
+
+              <!-- Interactive Actuators -->
+              <div class="virtual-motor-box">
+                <div style="text-align:center;">
+                  <div class="sim-wheel" id="virtual-wheel">⚙️</div>
+                  <span style="font-size:0.75rem; color:var(--text-muted); margin-top:4px; display:block;" id="wheel-status-text">DC Motor: OFF</span>
+                </div>
+
+                <div class="virtual-lcd" id="virtual-lcd-screen">
+                  <div>LCD 16x2 Display</div>
+                  <div style="color:#000;" id="lcd-line-2">> DIST: -- cm</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right: Controls & Serial Monitor -->
+            <div class="sim-controls">
+              <div class="control-group">
+                <div class="control-label">
+                  <span>📏 Ultrasonic Distance Sensor (HC-SR04)</span>
+                  <span id="slider-val-disp" style="color:var(--accent-cyan);">25 cm</span>
+                </div>
+                <input type="range" min="2" max="100" value="25" class="range-slider" id="distance-slider" aria-label="Distance Slider">
+              </div>
+
+              <div class="sim-btn-group">
+                <button class="btn btn-primary btn-sm" id="sim-run-btn">▶️ Run Arduino Code (Loop)</button>
+                <button class="btn btn-secondary btn-sm" id="sim-stop-btn">⏸️ Stop</button>
+                <button class="btn btn-accent btn-sm" id="sim-clear-btn">🧹 Clear Monitor</button>
+              </div>
+
+              <div>
+                <div class="control-label">
+                  <span>📟 Serial Monitor Output (9600 baud)</span>
+                </div>
+                <div class="serial-monitor" id="serial-monitor-box">
+                  <div class="serial-line info">[SYSTEM] Arduino Uno Rev3 initialized. Ready to upload sketch.</div>
+                  <div class="serial-line">[SETUP] Pins 9, 10 configured for PWM output. Ultrasonic Sensor attached to Pin 7 (TRIG), Pin 6 (ECHO).</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Achievements & Badges -->
+    <section class="achievements-section" id="achievements">
+      <div class="container">
+        <h2 class="section-title">
+          <span>🏆</span> School <span class="highlight">Achievements & Medals</span>
+        </h2>
+        <p class="section-subtitle">
+          Proud milestones from 6th and 7th grade academic & sports life!
+        </p>
+
+        <div class="achievements-grid">
+          <div class="badge-card">
+            <div class="badge-icon-box">🥈</div>
+            <div class="badge-details">
+              <h4>2nd Runner-Up - Science Expo 2025</h4>
+              <p>Inter-School Science Fair for Smart IR Trash Bin Model.</p>
+              <div class="badge-date">January 2025 • DPS Hyderabad</div>
+            </div>
+          </div>
+
+          <div class="badge-card">
+            <div class="badge-icon-box">🏅</div>
+            <div class="badge-details">
+              <h4>School Rank 4 - Math Olympiad</h4>
+              <p>Unified International Mathematics Olympiad (UIMO Grade 6/7).</p>
+              <div class="badge-date">November 2024 • National Rank 142</div>
+            </div>
+          </div>
+
+          <div class="badge-card">
+            <div class="badge-icon-box">⚡</div>
+            <div class="badge-details">
+              <h4>Level 3 Robotics Certification</h4>
+              <p>Completed 12-week hands-on Tinkerer workshop at T-Hub Junior.</p>
+              <div class="badge-date">August 2024 • T-Hub Hyderabad</div>
+            </div>
+          </div>
+
+          <div class="badge-card">
+            <div class="badge-icon-box">🏏</div>
+            <div class="badge-details">
+              <h4>Best Leg-Spinner Trophy</h4>
+              <p>Under-13 Colony League Tournament (3 Wickets for 14 Runs).</p>
+              <div class="badge-date">May 2024 • Habsiguda Cricket Club</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skill-o-Meter -->
+    <section class="skills-section" id="skills">
+      <div class="container">
+        <h2 class="section-title">
+          <span>📊</span> Aarav's <span class="highlight">Skill-O-Meter</span>
+        </h2>
+        <p class="section-subtitle">
+          Self-assessed progress bar meter based on hours spent practicing!
+        </p>
+
+        <div class="skills-grid">
+          <div class="skill-item">
+            <div class="skill-header">
+              <span>🤖 Arduino C++ & Electronics</span>
+              <span class="skill-percent">75%</span>
+            </div>
+            <div class="skill-bar-bg">
+              <div class="skill-bar-fill" data-progress="75%"></div>
+            </div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-header">
+              <span>🖥️ Tinkercad 3D & Circuit Simulation</span>
+              <span class="skill-percent">90%</span>
+            </div>
+            <div class="skill-bar-bg">
+              <div class="skill-bar-fill" data-progress="90%"></div>
+            </div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-header">
+              <span>💻 HTML5 & CSS Layouts</span>
+              <span class="skill-percent">85%</span>
+            </div>
+            <div class="skill-bar-bg">
+              <div class="skill-bar-fill" data-progress="85%"></div>
+            </div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-header">
+              <span>🧩 Scratch Block Coding</span>
+              <span class="skill-percent">95%</span>
+            </div>
+            <div class="skill-bar-bg">
+              <div class="skill-bar-fill" data-progress="95%"></div>
+            </div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-header">
+              <span>🐍 Python Basics (Loops & Lists)</span>
+              <span class="skill-percent">60%</span>
+            </div>
+            <div class="skill-bar-bg">
+              <div class="skill-bar-fill" data-progress="60%"></div>
+            </div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-header">
+              <span>🍛 Hyderabadi Biryani Finishing Speed</span>
+              <span class="skill-percent">100%</span>
+            </div>
+            <div class="skill-bar-bg">
+              <div class="skill-bar-fill" data-progress="100%"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Kid's Guestbook / Drop a Hi -->
+    <section class="contact-section" id="guestbook">
+      <div class="container">
+        <div class="contact-card">
+          <h2 class="section-title" style="text-align: center; justify-content: center;">
+            <span>📬</span> Drop Aarav a <span class="highlight">Friendly Message!</span>
+          </h2>
+          <p class="section-subtitle" style="text-align: center; margin-bottom: 28px;">
+            Want to collaborate on a robotics project or share coding tips? Leave a note below!
+          </p>
+
+          <form id="guestbook-form">
+            <div class="form-group">
+              <label for="guest-name" class="form-label">Your Name / School Name</label>
+              <input type="text" id="guest-name" class="form-input" placeholder="e.g. Rohan / DPS Computer Club" required>
+            </div>
+
+            <div class="form-group">
+              <label for="guest-message" class="form-label">Your Message / Feedback</label>
+              <textarea id="guest-message" rows="4" class="form-textarea" placeholder="e.g. Cool obstacle rover project Aarav! Let's build a line follower robot next!" required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%;" id="btn-submit-message">
+              <span>Send Message to Aarav</span> 🚀
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Interactive Guestbook Confirmation Modal -->
+  <div class="modal-backdrop" id="confirmation-modal">
+    <div class="modal-box">
+      <div class="modal-icon">🎉</div>
+      <h3 class="modal-title">Message Received!</h3>
+      <p class="modal-desc" id="modal-desc-text">
+        Woohoo! Thanks for writing to Aarav! He will read your message right after finishing his Physics numericals assignment tonight.
+      </p>
+      <button class="btn btn-primary" id="modal-close-btn" style="width:100%;">Awesome! Back to Lab 🤖</button>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>Made with ❤️ by <strong>Aarav Reddy</strong> | Class 7-B | DPS Nacharam, Hyderabad 🇮🇳</p>
+      <p style="margin-top: 6px; font-size:0.8rem; color:var(--text-dim);">
+        Handcrafted using pure HTML5, CSS3, & Vanilla JavaScript. No robots were harmed in making this site!
+      </p>
+    </div>
+  </footer>
+
+  <!-- JavaScript Logic -->
+  <script src="script.js"></script>
+</body>
+</html>
